@@ -1,10 +1,9 @@
-import configparser
 import json
-import os
 from time import sleep
 from websocket import create_connection
 from dictionaries import register_dict, update_dict
 import logging
+from config import config
 
 
 class States(object):
@@ -22,9 +21,6 @@ class Device(object):
             self.device_state[device["outlet"]] = States.ON if device["switch"] == "on" else States.OFF
 
     def change_device_state(self, state, outlet):
-        config = configparser.ConfigParser()
-        config.read(os.getcwd() + "/config.ini")
-
         if outlet not in [switch for switch in self.device_state.keys()]:
             logging.error("Switch number is out of switches which have current device ({}, "
                           "{}))".format(self.device_id, self.device_name))
