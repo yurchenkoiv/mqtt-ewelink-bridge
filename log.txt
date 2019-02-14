@@ -1,0 +1,353 @@
+Connected with result code 0
+Subscribed to: sonoff/Switch/0
+Subscribed to: sonoff/Switch/1
+Subscribed to: sonoff/Switch/2
+Subscribed to: sonoff/Switch/3
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/2
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/3
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/0
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1/set
+message qos= 0
+message retain flag= 0
+message received  off
+message topic= sonoff/Switch/1
+message qos= 0
+message retain flag= 0
+message received  on
+message topic= sonoff/Switch/0/set
+message qos= 0
+message retain flag= 
