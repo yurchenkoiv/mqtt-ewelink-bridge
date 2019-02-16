@@ -13,6 +13,9 @@ def get_devices():
     for i in range(0, len(j)):
         device_id = j[i]['deviceid']
         device_name = j[i]['name']
-        device_state = j[i]['params']['switches']
+        if "switches" in j[i]['params']:
+            device_state = j[i]['params']['switches']
+        else:
+            device_state = j[i]['params']['switch']
         devices.append(Device(device_id, device_name, device_state))
     return devices

@@ -14,13 +14,16 @@ class States(object):
 class Device(object):
     def __init__(self, device_id, device_name, device_state):
         logging.basicConfig(filename="device.log", level=logging.INFO)
-        self.device_id = int(device_id)
+        self.device_id = device_id
         self.device_name = device_name
         self.device_state = {}
-        for device in device_state:
-            self.device_state[device["outlet"]] = States.ON if device["switch"] == "on" else States.OFF
+        if isinstance(device_state, list):
+            for device in device_state:
+                self.device_state[device["outlet"]] = device["switch"]
+        else:
+            self.device_state = device_state
 
-    def change_device_state(self, state, outlet):
+    def change_device_state(self, state, outlet=None):
         if outlet not in [switch for switch in self.device_state.keys()]:
             logging.error("Switch number is out of switches which have current device ({}, "
                           "{}))".format(self.device_id, self.device_name))
@@ -29,8 +32,11 @@ class Device(object):
                           "{}))".format(self.device_id, self.device_name))
 
         update_dict["deviceid"] = self.device_id
-        update_dict["params"]["switches"].append({"outlet": outlet,
-                                                  "switch": state})
+        if isinstance(self.device_state, list):
+            update_dict["params"]["switches"].append({"outlet": outlet,
+                                                      "switch": state})
+        else:
+            update_dict["params"]["switch"] = state
         websocket = create_connection(config.get("urls", "wss_url"))
         websocket.send(json.dumps(register_dict))
         sleep(.5)

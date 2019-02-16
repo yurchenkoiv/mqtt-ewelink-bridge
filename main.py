@@ -6,23 +6,33 @@ from config import config
 import deviceUtils
 
 MESSAGE_STRING = "{datetime} - message: {message}, topic: {topic}"
+DEVICE_INFO_MESSAGE = "Device name: {device_name}, state: {state}"
 devices = []
 
 
 def on_connect(client, userdata, flags, rc):
-
     logging.info("() - Connected with result code {}".format(str(datetime.datetime.now()), str(rc)))
     devices_topic = config.items("topics")[0][1]
     for device in devices:
-        client.publish(devices_topic, "device name: " + device.device_name + ", switches: " +
-                       str([switch for switch in device.device_state.keys()]))
-
-        for switch in device.device_state.keys():
-            state_topic = "sonoff/" + device.device_name + "/" + str(switch)
+        is_multichannel_device = isinstance(device.device_state, dict)
+        device_state = str([switch for switch in device.device_state.keys()]) if is_multichannel_device \
+            else device.device_state
+        client.publish(devices_topic, DEVICE_INFO_MESSAGE.format(device_name=device.device_name,
+                                                                 state=device_state))
+        if is_multichannel_device:
+            for switch in device.device_state.keys():
+                state_topic = "sonoff/" + device.device_name + "/" + str(switch)
+                control_topic = state_topic + "/set"
+                client.subscribe(state_topic)
+                client.subscribe(control_topic)
+                client.publish(state_topic, device.device_state[switch])
+                logging.info("{} - Subscribed to: {}".format(str(datetime.datetime.now()), state_topic))
+        else:
+            state_topic = "sonoff/" + device.device_name
             control_topic = state_topic + "/set"
             client.subscribe(state_topic)
             client.subscribe(control_topic)
-            client.publish(state_topic, device.device_state[switch])
+            client.publish(state_topic, device.device_state)
             logging.info("{} - Subscribed to: {}".format(str(datetime.datetime.now()), state_topic))
 
 
