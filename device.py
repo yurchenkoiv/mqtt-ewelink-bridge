@@ -32,7 +32,7 @@ class Device(object):
                           "{}))".format(self.device_id, self.device_name))
 
         update_dict["deviceid"] = self.device_id
-        if isinstance(self.device_state, list):
+        if isinstance(self.device_state, dict):
             update_dict["params"]["switches"].append({"outlet": outlet,
                                                       "switch": state})
         else:
